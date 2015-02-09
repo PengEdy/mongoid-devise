@@ -1,4 +1,4 @@
 <h1>Home#index</h1>
 <% @users.each do |user| %>
-  <p>User: <%= user.email %></p>
+  <p>User: <%= link_to user.email, user %></p>
 <% end %>
